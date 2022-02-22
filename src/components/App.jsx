@@ -1,5 +1,5 @@
 import Profile from './Profile';
-import user from '../user.json';
+import user from 'user.json';
 
 export const App = () => {
   return (
@@ -9,7 +9,7 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 20,
         textTransform: 'uppercase',
         color: '#010101',
       }}
