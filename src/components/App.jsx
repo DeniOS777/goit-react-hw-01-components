@@ -1,5 +1,5 @@
-import Profile from './Profile';
 import user from 'user.json';
+import Profile from './Profile';
 
 export const App = () => {
   return (
@@ -10,7 +10,7 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 20,
-        textTransform: 'uppercase',
+        // textTransform: 'uppercase',
         color: '#010101',
       }}
     >
