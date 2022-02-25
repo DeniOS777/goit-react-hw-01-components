@@ -12,6 +12,7 @@ export const App = () => {
         fontSize: 20,
         // textTransform: 'uppercase',
         color: '#010101',
+        backgroundColor: '#E7ECF2',
       }}
     >
       <Profile
