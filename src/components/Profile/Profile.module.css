@@ -1,6 +1,7 @@
 .profile {
   border: 1px solid grey;
   border-radius: 7px;
+  overflow: hidden;
 }
 
 .description {
