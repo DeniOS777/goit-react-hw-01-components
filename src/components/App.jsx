@@ -1,6 +1,6 @@
-import user from 'user.json';
 import Profile from './Profile/Profile';
 import userPhoto from '../userPhoto.jpg';
+import user from 'user.json';
 
 export const App = () => {
   return (
