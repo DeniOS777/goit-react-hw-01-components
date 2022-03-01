@@ -15,7 +15,7 @@ export default function Profile({
           src={avatar}
           alt={username}
           className={styles.avatar}
-          width="300"
+          width="150"
         />
         <p className={styles.name}>{username}</p>
         <p className={styles.tag}>@{tag}</p>

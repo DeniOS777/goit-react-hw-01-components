@@ -1,5 +1,6 @@
 import user from 'user.json';
 import Profile from './Profile/Profile';
+import userPhoto from '../userPhoto.jpg';
 
 export const App = () => {
   return (
@@ -16,7 +17,7 @@ export const App = () => {
     >
       <Profile
         username={user.username}
-        avatar={user.avatar}
+        avatar={userPhoto}
         tag={user.tag}
         location={user.location}
         stats={user.stats}
