@@ -6,30 +6,32 @@
 }
 
 .description {
-  padding: 20px;
+  padding: 35px 50px;
   text-align: center;
   background-color: #ffffff;
   border-bottom: 1px solid rgb(231, 231, 231);
 }
 
 .avatar {
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .name {
   margin-bottom: 10px;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
 }
 
 .tag {
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
   color: rgb(128, 127, 127);
 }
 
 .location {
-  font-size: 22px;
+  font-size: 20px;
   color: rgb(128, 127, 127);
 }
 
@@ -54,7 +56,7 @@
 
 .label {
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(128, 127, 127);
 }
 
