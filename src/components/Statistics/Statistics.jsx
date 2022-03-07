@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 
-function Statistics() {
+function Statistics({ title, stats }) {
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      {title && <h2 className="title">{title}</h2>}
 
       <ul className="stat-list">
         <li className="item">
@@ -30,3 +30,5 @@ function Statistics() {
     </section>
   );
 }
+
+export default Statistics;

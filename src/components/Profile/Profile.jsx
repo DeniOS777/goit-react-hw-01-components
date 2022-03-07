@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 
-export default function Profile({
+function Profile({
   username,
   tag,
   location,
@@ -53,3 +53,5 @@ Profile.prototype = {
     likes: PropTypes.number,
   }),
 };
+
+export default Profile;

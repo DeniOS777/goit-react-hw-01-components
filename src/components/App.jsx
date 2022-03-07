@@ -1,6 +1,9 @@
 import Profile from './Profile/Profile';
-import userPhoto from '../userPhoto.jpg';
-import user from 'user.json';
+import userPhoto from './Profile/userPhoto.jpg';
+import user from './Profile/user.json';
+
+import Statistics from './Statistics/Statistics';
+import data from './Statistics/data.json';
 
 export const App = () => {
   return (
@@ -22,6 +25,7 @@ export const App = () => {
         location={user.location}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
