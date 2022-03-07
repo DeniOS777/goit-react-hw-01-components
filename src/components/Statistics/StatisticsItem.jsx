@@ -1,4 +1,6 @@
-export default function StatisticsItem({ data }) {
+import PropTypes from 'prop-types';
+
+function StatisticsItem({ data }) {
   return (
     <li className="item">
       <span className="label">{data.label}</span>
@@ -6,3 +8,9 @@ export default function StatisticsItem({ data }) {
     </li>
   );
 }
+
+StatisticsItem.prototype = {
+  data: PropTypes.object.isRequired,
+};
+
+export default StatisticsItem;

@@ -18,6 +18,7 @@ function Statistics({ title, stats }) {
 
 Statistics.prototype = {
   title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Statistics;
