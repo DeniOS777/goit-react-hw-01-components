@@ -11,6 +11,7 @@ export const App = () => {
       style={{
         height: '100%',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 20,

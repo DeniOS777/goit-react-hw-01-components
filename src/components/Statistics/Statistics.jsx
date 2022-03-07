@@ -4,7 +4,7 @@ import styles from './Statistics.module.css';
 function Statistics({ title, stats }) {
   return (
     <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+      {title && <h2 className={styles.title}>{title}</h2>}
 
       <ul className="stat-list">
         <li className="item">
@@ -30,5 +30,9 @@ function Statistics({ title, stats }) {
     </section>
   );
 }
+
+Statistics.prototype = {
+  title: PropTypes.string,
+};
 
 export default Statistics;
