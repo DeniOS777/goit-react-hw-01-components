@@ -4,10 +4,10 @@ import StatisticsItem from './StatisticsItem';
 
 function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
+    <section className={styles.statistics}>
       {title && <h2 className={styles.title}>{title}</h2>}
 
-      <ul className="stat-list">
+      <ul className={styles.statList}>
         {stats.map(item => {
           return <StatisticsItem data={item} key={item.id} />;
         })}
