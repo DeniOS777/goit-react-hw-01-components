@@ -5,7 +5,7 @@ function StatisticsItem({ data }) {
   return (
     <li className={styles.item}>
       <span className={styles.label}>{data.label}</span>
-      <span className="percentage">{data.percentage}%</span>
+      <span className={styles.percentage}>{data.percentage}%</span>
     </li>
   );
 }
