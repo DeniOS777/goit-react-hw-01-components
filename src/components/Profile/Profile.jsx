@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
+import dummyUser from './dummyUser.jpg';
 
 function Profile({
   username,
   tag,
   location,
-  avatar,
+  avatar = dummyUser,
   stats: { followers, views, likes },
 }) {
   return (
