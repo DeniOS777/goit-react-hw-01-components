@@ -2,10 +2,6 @@ import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 
 function StatisticsItem({ data }) {
-  function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  }
-
   return (
     <li
       className={styles.item}
@@ -15,6 +11,10 @@ function StatisticsItem({ data }) {
       <span className={styles.percentage}>{data.percentage}%</span>
     </li>
   );
+}
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
 StatisticsItem.prototype = {
