@@ -13,7 +13,7 @@ function Profile({
     <div className={styles.profile}>
       <div className={styles.description}>
         <img
-          src={avatar}
+          src={avatar ?? dummyUser}
           alt={username}
           className={styles.avatar}
           width="150"
