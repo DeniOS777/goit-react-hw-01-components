@@ -1,9 +1,9 @@
-import Profile from './Profile/Profile';
-import userPhoto from './Profile/userPhoto.jpg';
-import user from './Profile/user.json';
+import Profile from 'components/Profile/Profile';
+import userPhoto from 'components/Profile/userPhoto.jpg';
+import user from 'components/Profile/user.json';
 
-import Statistics from './Statistics/Statistics';
-import data from './Statistics/data.json';
+import Statistics from 'components/Statistics/Statistics';
+import data from 'components/Statistics/data.json';
 
 export const App = () => {
   return (
