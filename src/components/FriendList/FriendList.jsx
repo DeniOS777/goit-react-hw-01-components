@@ -6,7 +6,6 @@ function FriendList({ friends }) {
   return (
     <ul className={styles.friendList}>
       {friends.map(({ avatar, name, isOnline, id }) => {
-        console.log(isOnline);
         return (
           <FriendListItem
             key={id}
