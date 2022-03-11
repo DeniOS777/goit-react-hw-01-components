@@ -5,8 +5,13 @@ function FriendListItem({ avatar, name, isOnline }) {
   return (
     <li className={styles.item}>
       <span className="status"></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+      <img
+        className={styles.avatar}
+        src={avatar}
+        alt="User avatar"
+        width="48"
+      />
+      <p className={styles.name}>{name}</p>
     </li>
   );
 }
