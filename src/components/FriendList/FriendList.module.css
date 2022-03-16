@@ -28,12 +28,12 @@
 
 .true {
   composes: status;
-  background-color: #0dc40d;
+  background-color: #11a311;
 }
 
 .false {
   composes: status;
-  background-color: #ec3636;
+  background-color: #d82222;
 }
 
 .avatar {
