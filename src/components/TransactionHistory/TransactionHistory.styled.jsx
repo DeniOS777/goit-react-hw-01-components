@@ -30,10 +30,27 @@ export const TableBodyRow = styled.tr`
 `;
 
 export const TableBodyCell = styled.td`
+  padding: 15px 0;
   font-size: 16px;
   color: #82878d;
 
   &:not(:last-child) {
     border-right: 1px solid #82878d;
+  }
+
+  &:nth-child(3n + 3) {
+    text-align: center;
+  }
+
+  &:nth-child(3n + 1) {
+    text-transform: capitalize;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  &:nth-child(3n + 2) {
+    text-align: right;
+    padding-left: 105px;
+    padding-right: 105px;
   }
 `;
