@@ -2,14 +2,15 @@ import styled from 'styled-components';
 
 export const Table = styled.table`
   border-spacing: 0;
-  border: 1px solid #000000;
-  border-radius: 10px;
+  border: 1px solid #dedddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px #c5c4c4;
   overflow: hidden;
 `;
 
 export const TableHeadCell = styled.th`
-  padding: 15px 80px;
-  width: 100px;
+  padding: 15px 0;
+  width: 33%;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
@@ -17,6 +18,11 @@ export const TableHeadCell = styled.th`
   color: #ffffff;
   text-transform: uppercase;
   background-color: #42bdd6;
+
+  &:nth-child(1) {
+    padding-left: 89px;
+    text-align: left;
+  }
 
   &:not(:last-child) {
     border-right: 1px solid #ffffff;
@@ -34,23 +40,23 @@ export const TableBodyCell = styled.td`
   font-size: 16px;
   color: #82878d;
 
-  &:not(:last-child) {
-    border-right: 1px solid #82878d;
+  &:nth-child(3n + 1) {
+    text-transform: capitalize;
+    padding-left: 89px;
+    padding-right: 89px;
+  }
+
+  &:nth-child(3n + 2) {
+    text-align: right;
+    padding-left: 103px;
+    padding-right: 103px;
   }
 
   &:nth-child(3n + 3) {
     text-align: center;
   }
 
-  &:nth-child(3n + 1) {
-    text-transform: capitalize;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  &:nth-child(3n + 2) {
-    text-align: right;
-    padding-left: 105px;
-    padding-right: 105px;
+  &:not(:last-child) {
+    border-right: 1px solid #dedddd;
   }
 `;
