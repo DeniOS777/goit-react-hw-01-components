@@ -10,7 +10,7 @@
   padding: 35px 50px;
   text-align: center;
   background-color: #ffffff;
-  border-bottom: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .avatar {
@@ -34,12 +34,12 @@
 .tag {
   margin-bottom: 10px;
   font-size: 20px;
-  color: rgb(128, 127, 127);
+  color: #807f7f;
 }
 
 .location {
   font-size: 20px;
-  color: rgb(128, 127, 127);
+  color: #807f7f;
 }
 
 .stats {
@@ -58,13 +58,13 @@
 }
 
 .statsItem:not(:last-child) {
-  border-right: 1px solid rgb(227, 227, 227);
+  border-right: 1px solid #e3e3e3;
 }
 
 .label {
   margin-bottom: 5px;
   font-size: 14px;
-  color: rgb(128, 127, 127);
+  color: #807f7f;
 }
 
 .quantity {
