@@ -20,6 +20,8 @@ export const App = () => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        paddingTop: 20,
+        paddingBottom: 20,
         fontSize: 20,
         color: '#010101',
         backgroundColor: '#E7ECF2',
