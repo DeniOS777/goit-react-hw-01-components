@@ -18,6 +18,11 @@
   margin-bottom: 35px;
   max-width: 150px;
   border-radius: 50%;
+  transition: transform 0.4s ease-out;
+}
+
+.avatar:hover {
+  transform: scale(1.4);
 }
 
 .name {
