@@ -8,7 +8,7 @@ import {
 
 function TransactionHistory({ items }) {
   return (
-    <Table className="transactionHistory">
+    <Table>
       <thead>
         <tr>
           <TableHeadCell>Type</TableHeadCell>
