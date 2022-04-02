@@ -4,7 +4,7 @@ import {
   TableHeadCell,
   TableBodyCell,
   TableBodyRow,
-} from 'components/TransactionHistory/TransactionHistory.styled';
+} from './TransactionHistory.styled';
 
 function TransactionHistory({ items }) {
   return (
