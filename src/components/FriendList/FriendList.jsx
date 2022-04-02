@@ -19,7 +19,7 @@ function FriendList({ friends }) {
   );
 }
 
-FriendList.prototype = {
+FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.exact({
       avatar: PropTypes.string.isRequired,
