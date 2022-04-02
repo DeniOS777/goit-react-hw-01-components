@@ -1,5 +1,16 @@
 import PropTypes from 'prop-types';
-import styles from './Profile.module.css';
+import {
+  UserCard,
+  UserDescription,
+  Avatar,
+  Name,
+  TagName,
+  Location,
+  UserStatistics,
+  StatisticsItem,
+  Label,
+  Quantity,
+} from './Profile.styled';
 import dummyUser from './dummyUser.jpg';
 
 function Profile({
@@ -10,36 +21,31 @@ function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div className={styles.profile}>
-      <div className={styles.description}>
-        <img
-          src={avatar ?? dummyUser}
-          alt={username}
-          className={styles.avatar}
-          width="150"
-        />
-        <p className={styles.name}>{username}</p>
-        <p className={styles.tag}>@{tag}</p>
-        <p className={styles.location}>{location}</p>
-      </div>
+    <UserCard>
+      <UserDescription>
+        <Avatar src={avatar ?? dummyUser} alt={username} width="150" />
+        <Name>{username}</Name>
+        <TagName>@{tag}</TagName>
+        <Location>{location}</Location>
+      </UserDescription>
 
-      <ul className={styles.stats}>
-        <li className={styles.statsItem}>
-          <span className={styles.label}>Followers</span>
-          <span className={styles.quantity}>{followers}</span>
-        </li>
+      <UserStatistics>
+        <StatisticsItem>
+          <Label>Followers</Label>
+          <Quantity>{followers}</Quantity>
+        </StatisticsItem>
 
-        <li className={styles.statsItem}>
-          <span className={styles.label}>Views</span>
-          <span className={styles.quantity}>{views}</span>
-        </li>
+        <StatisticsItem>
+          <Label>Views</Label>
+          <Quantity>{views}</Quantity>
+        </StatisticsItem>
 
-        <li className={styles.statsItem}>
-          <span className={styles.label}>Likes</span>
-          <span className={styles.quantity}>{likes}</span>
-        </li>
-      </ul>
-    </div>
+        <StatisticsItem>
+          <Label>Likes</Label>
+          <Quantity>{likes}</Quantity>
+        </StatisticsItem>
+      </UserStatistics>
+    </UserCard>
   );
 }
 
